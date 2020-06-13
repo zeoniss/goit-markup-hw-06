@@ -150,6 +150,82 @@ main .text {
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2000ms var(--timing-function);
+}
+
+.form {
+    padding: 20px;
+    margin: 20px;
+    width: 528px;
+    height: 581px;
+}
+
+.form-title {
+    font-family: Roboto;
+    font-style: 400;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-title);
+}
+
+.form-input {
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-42px);
+}
+
+.form-input:placeholder-shown {
+    background-color: red;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    background-color: teal;
+    transform: translateY(-50%);
+    color: #757575;
+    transition: transform 250ms linear;
+}
+
 
 /*Our team*/
 
@@ -608,11 +684,18 @@ main .text {
     margin: 0;
     border-radius: 4px;
     padding: 10px 32px;
-    width: 200px;
+    min-width: 200px;
+    text-align: center;
     min-height: 50px;
-    background-color: #2196f3;
+    background-color: var(--accent-color);
     border-color: transparent;
     color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 }
 
 .button-follower {
