@@ -182,6 +182,16 @@ main .text {
     height: 581px;
 }
 
+.form-icon {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    margin-right: 8px;
+    transition: fill 2500ms var(--timing-function);
+}
+
 .form-title {
     font-family: Roboto;
     font-style: 400;
