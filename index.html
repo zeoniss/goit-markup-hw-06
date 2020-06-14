@@ -53,37 +53,65 @@
     <main>
         <section class="overlay main">
             <h1 class="section">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open type="submit" class="button-order">Заказать услугу</button>
+            <button data-modal-open type="submit" class="button-order">
+          Заказать услугу
+        </button>
             <div class="backdrop is-hidden" data-backdrop>
                 <div class="modal">
-
-
-
-
-
                     <form class="form break" autocomplete="off">
                         <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
                         <div class="form-field">
-                            <input type="text" class="form-input" name="name" id="name" placeholder="  " />
+                            <input type="name" class="form-input" name="name" id="name" placeholder=" " />
                             <label for="name" class="form-label">Имя</label>
-                            <svg class="form-icon" width="18" height="18">
-                               <use href="./images/form.svg#person" ></use>
-                           </svg>
-
+                            <svg class="form-icon" width="13" height="13">
+                  <use href="./images/form.svg#person"></use>
+                </svg>
                         </div>
+
                         <div class="form-field">
                             <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
                             <label for="name" class="form-label">Почта</label>
+                            <svg class="form-icon" width="13" height="13">
+                  <use href="./images/form.svg#email"></use>
+                </svg>
                         </div>
                         <div class="form-field">
                             <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
                             <label for="tel" class="form-label">Телефон</label>
-
+                            <svg class="form-icon" width="15" height="12">
+                  <use href="./images/form.svg#phone"></use>
+                </svg>
                         </div>
-                        <button type="submit">Оставить заявку</button>
+
+                        <div class="form-field">
+                            <textarea name="data-contacts" id="textarea" rows="6" class="form-coment" placeholder="  "></textarea>
+                            <label for="textarea" class="form-textarea">
+                  Комментарий
+                </label>
+                        </div>
+                        <div class="checkbox-field">
+                            <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    checked
+                    class="checkbox-input"
+                  />
+                  <span class="checkbox-icon"></span>
+
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#" class="agree contract">Условия договора</a>
+                </label>
+                        </div>
+                        <button type="submit" class="button-submit">Отправить</button>
+                    </form>
+                    <button data-modal-close class="modal-btn">
+              <svg class="icon-close" width="18" height="18">
+                <use href="./images/form.svg#close"></use>
+              </svg>
+            </button>
                 </div>
-                </form>
             </div>
         </section>
         <section class="middle container">
@@ -483,15 +511,14 @@
         openModalBtn: document.querySelector('[data-modal-open]'),
         closeModalBtn: document.querySelector('[data-modal-close]'),
         backdrop: document.querySelector('[data-backdrop]'),
-    };
+    }
 
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openModalBtn.addEventListener('click', toggleModal)
+    refs.closeModalBtn.addEventListener('click', toggleModal)
 
     function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
+        refs.backdrop.classList.toggle('is-hidden')
     }
 </script>
-
 
 </html>
