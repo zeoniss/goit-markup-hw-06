@@ -188,8 +188,6 @@ main .text {
 .form {
     padding: 20px;
     margin: 20px;
-    width: 528px;
-    height: 581px;
 }
 
 .form-icon {
@@ -203,14 +201,11 @@ main .text {
 }
 
 .form-title {
-    font-family: Roboto;
-    font-style: 400;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.15;
+    display: block;
+    margin-bottom: 30px;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-title);
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .form-input {
@@ -295,39 +290,6 @@ main .text {
     outline: none;
 }
 
-.checkbox-field {
-    width: 100%;
-    text-align: left;
-}
-
-.checkbox-label {
-    display: flex;
-    font-size: 14px;
-    line-height: 1.71;
-    align-items: center;
-    columns: #757575;
-    cursor: pointer;
-}
-
-.checkbox-input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0px;
-    padding: 0px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.checkbox-input:checked+.checkbox-icon {
-    background-color: var(--accent-color);
-    background-image: url(../images/iconcheck.svg);
-    background-size: cover;
-    border-radius: 2px;
-    border-color: var(--accent-color);
-}
-
 .button-submit {
     height: 50px;
     padding: 0;
@@ -347,15 +309,7 @@ main .text {
     border: 0;
 }
 
-.agree.contract {
-    display: block;
-    margin-left: 5px;
-    color: var(--accent-color);
-    text-decoration: underline;
-    text-align: right;
-}
-
-.modal-btn {
+.modal-button {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -367,6 +321,13 @@ main .text {
     background-color: #ffffff;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+}
+
+.icon-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
