@@ -1102,6 +1102,7 @@ main .text {
 
 .join-us {
     margin-bottom: 42px;
+    margin-left: 30px;
 }
 
 .links {
@@ -1141,10 +1142,6 @@ main .text {
     /* or 171% */
     letter-spacing: 0.03em;
     color: #ffffff;
-}
-
-.subscribe {
-    margin-bottom: 85px;
 }
 
 .decorate {
@@ -1190,4 +1187,63 @@ main .text {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.join-form {
+    margin-left: 94px;
+    margin-top: 25px;
+    margin-bottom: 56px;
+}
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.form-footer {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 20px;
+    padding: 16px 15px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #2f303a;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.87;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+    position: relative;
+    padding: 0;
+    padding-left: 27px;
+    min-width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: var(--accent-color);
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: start;
+    cursor: pointer;
+}
+
+.icon-send {
+    position: absolute;
+    fill: var(--primary-white-color);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    margin-left: 10px;
 }
